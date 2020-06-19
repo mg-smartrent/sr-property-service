@@ -30,7 +30,7 @@ import static org.mockito.Mockito.when
         classes = Application.class,
         webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT,
         properties = ["eureka.client.enabled:false"])
-class TestRentalApplicationService extends IntegrationTestsSetup {
+class RentalApplicationServiceITest extends IntegrationTestsSetup {
 
     @Autowired
     private PropertyService propertyService

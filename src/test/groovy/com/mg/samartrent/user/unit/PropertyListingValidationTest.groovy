@@ -30,7 +30,7 @@ import static org.mockito.Mockito.when
         webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT,
         properties = ["eureka.client.enabled:false"]
 )
-class TestPropertyListingValidation extends Specification {
+class PropertyListingValidationTest extends Specification {
 
     @Mock
     private Repository<PropertyListing> propertyListingRepository

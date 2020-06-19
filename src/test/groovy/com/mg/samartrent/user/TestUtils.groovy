@@ -17,8 +17,8 @@ class TestUtils {
         Property property = new Property()
 
         property.setUserId("userId1234")
-        property.setBuildingType(EnBuildingType.Condo.name())
-        property.setCondition(EnPropertyCondition.Normal.name())
+        property.setBuildingType(EnBuildingType.Condo)
+        property.setCondition(EnPropertyCondition.Normal)
         property.setTotalRooms(10)
         property.setTotalBathRooms(5)
         property.setTotalBalconies(1)

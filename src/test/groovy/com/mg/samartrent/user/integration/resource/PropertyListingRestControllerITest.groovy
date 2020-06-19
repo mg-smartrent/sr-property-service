@@ -31,7 +31,7 @@ import static org.mockito.Mockito.when
         properties = ["eureka.client.enabled:false"]
 )
 @Stepwise
-class TestPropertyListingRestController extends IntegrationTestsSetup {
+class PropertyListingRestControllerITest extends IntegrationTestsSetup {
 
     @LocalServerPort
     private int port

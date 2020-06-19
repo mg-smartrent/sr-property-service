@@ -31,7 +31,7 @@ import static org.mockito.Mockito.when
         webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT,
         properties = ["eureka.client.enabled:false"]
 )
-class TestRentalApplicationsRestController extends IntegrationTestsSetup {
+class RentalApplicationsRestControllerITest extends IntegrationTestsSetup {
 
     @LocalServerPort
     private int port

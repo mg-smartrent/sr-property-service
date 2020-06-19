@@ -24,7 +24,7 @@ import static org.mockito.Mockito.when
         webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT,
         properties = ["eureka.client.enabled:false"]
 )
-class TestPropertyService extends IntegrationTestsSetup {
+class PropertyServiceITest extends IntegrationTestsSetup {
 
     @MockBean
     private ExternalUserService userService
