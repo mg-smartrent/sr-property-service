@@ -1,0 +1,31 @@
+##------------------------------------------------------------------
+##------DB CONFIGURATION--------------------------------------------
+##------------------------------------------------------------------
+spring:
+  data:
+    mongodb:
+      database: SRPropertiesDB
+      uri: mongodb://localhost/${spring.data.mongodb.database}
+
+##------------------------------------------------------------------
+##------EXTERNAL REST SERVICES CONFIGURATION------------------------
+##------------------------------------------------------------------
+rest:
+  service:
+    user: http://user-service
+
+##------------------------------------------------------------------
+##------LOGGER CONFIGURATION----------------------------------------
+##------------------------------------------------------------------
+logging:
+  file:
+    name: logs/app.log
+    max-size: 10MB
+  level:
+    com.mg: INFO
+    org.springframework.web: INFO
+    org.springframework.security: INFO
+    org.springframework.boot: ERROR
+    zipkin2.reporter.AsyncReporter: ERROR
+
+

@@ -1,0 +1,23 @@
+##------------------------------------------------------------------
+##------SERVICE CONFIGURATION---------------------------------------
+##------------------------------------------------------------------
+server:
+  port: 8083
+spring:
+  application:
+    name: property-service
+
+
+##------------------------------------------------------------------
+##------GATEWAY API CONFIGURATION-----------------------------------
+##------------------------------------------------------------------
+eureka:
+  client:
+    registerWithEureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://admin:12341234@localhost:8081/eureka
+    healthcheck:
+      enabled: true
+  instance:
+    preferIpAddress: true

@@ -1,0 +1,14 @@
+##------------------------------------------------------------------
+##------LOGGER CONFIGURATION----------------------------------------
+##------------------------------------------------------------------
+logging:
+  file:
+    path: logs
+    name: application.log
+    max-size: 10MB
+  level:
+    com.mg: INFO
+    org.springframework.web: INFO
+    org.springframework.security: INFO
+    org.springframework.data.mongodb: ERROR
+    org.springframework.test: ERROR
