@@ -15,7 +15,7 @@
     <properties>
         <graphql.sprq.version>0.0.4</graphql.sprq.version>
         <graphql.version>5.0.2</graphql.version>
-        <swagger.version>2.9.2</swagger.version>
+        <swagger.version>2.10.0</swagger.version>
     </properties>
 
     <scm>
